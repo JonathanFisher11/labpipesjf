@@ -429,7 +429,7 @@ Notice that many of these tweets are in non-English languages.
 > Write a one line shell command that returns the name of the location that the first 10 tweets were sent from on 1 April 2020.
 > Edit the code block below with your command and its output
 > ```
-> unzip -p '/data/Twitter dataset/geoTwitter20-04-01.zip' | head -n10 | jq '.["place"]["full_name"]'
+> $ unzip -p '/data/Twitter dataset/geoTwitter20-04-01.zip' | head -n10 | jq '.["place"]["full_name"]'
 > "San José, Costa Rica"
 > "Phoenix, AZ"
 > "Cibitung, Indonesia"
@@ -476,7 +476,7 @@ so it's fine if the text appears inside of a hashtag.
 > (This was the last day of in-person classes that semester.)
 > Edit the code block below with your command and its output
 > ```
-> unzip -p '/data/Twitter dataset/geoTwitter20-03-12.zip' | grep "Claremont, CA" | grep -i "coronavirus" | jq '.["text"]'
+> $ unzip -p '/data/Twitter dataset/geoTwitter20-03-12.zip' | grep "Claremont, CA" | grep -i "coronavirus" | jq '.["text"]'
 > "Huh?!🦦"
 > "Ready to battle Coronavirus. 😤😤😤 https://t.co/DXrh3suIOH"
 > "I wanna live Bitch 😂😂😂"
